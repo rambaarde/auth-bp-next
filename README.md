@@ -2,6 +2,16 @@
 
 Next.js Authentication Boilerplate with support for whitelabeling, RBAC, and multitenant architectures.
 
+<div align="center">
+
+[![npm version](https://img.shields.io/npm/v/auth-bp-next?style=flat-square&color=green)](https://www.npmjs.com/package/auth-bp-next)
+[![npm downloads](https://img.shields.io/npm/dm/auth-bp-next?style=flat-square&color=brightgreen)](https://www.npmjs.com/package/auth-bp-next)
+[![license](https://img.shields.io/npm/l/auth-bp-next?style=flat-square)](https://github.com/rambaarde/auth-bp-next/blob/main/LICENSE)
+
+[📦 View on npm](https://www.npmjs.com/package/auth-bp-next)
+
+</div>
+
 ## Features
 
 ✅ **JWT Authentication** - Secure token-based authentication  
