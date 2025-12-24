@@ -1,6 +1,6 @@
 {
   "name": "auth-bp-next",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Next.js Authentication Boilerplate - Whitelabel & Non-Whitelabel ready with RBAC and Multitenant support",
   "main": "dist/cli.js",
   "types": "dist/cli.d.ts",
