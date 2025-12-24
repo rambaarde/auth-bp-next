@@ -1,6 +1,7 @@
 import inquirer from 'inquirer';
 
 export interface AuthBPNextConfig {
+  database: 'supabase' | 'google-cloud-sql';
   whitelabel: boolean;
   rbac: boolean;
   multitenant: boolean;
@@ -9,6 +10,17 @@ export interface AuthBPNextConfig {
 
 export async function promptConfig(): Promise<AuthBPNextConfig> {
   const answers = await inquirer.prompt([
+    {
+      type: 'list',
+      name: 'database',
+      message: 'Which database are you using?',
+      choices: [
+        { name: 'Supabase PostgreSQL', value: 'supabase' },
+        { name: 'Google Cloud SQL PostgreSQL', value: 'google-cloud-sql' },
+      ],
+      default: 'supabase',
+      prefix: '❓',
+    },
     {
       type: 'confirm',
       name: 'whitelabel',
